@@ -2,7 +2,10 @@
 
 クリーンアーキテクチャーを体験するためのリポジトリです。
 
-## 使い方
-各自forkして練習を解いていく
+## 始め方
+1. リポジトリをforkする  
+▼forkの仕方  
+https://docs.github.com/ja/get-started/quickstart/fork-a-repo
 
-TDB
+2. 練習問題を解く  
+`practice` ディレクトリに問題が入っているのでそれを解いていってください
