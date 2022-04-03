@@ -8,5 +8,8 @@ services:
       context: .
       target: run-base #buildして利用するtarget
       dockerfile: ./docker/default/go/Dockerfile
+    command:
+      - air
     ports:
       - "8080:8080" #http
+      - "2345:2345" # dlv

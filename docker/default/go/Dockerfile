@@ -1,5 +1,6 @@
 FROM golang:1.18 AS build-base
-# TODO airとかdlv後で入れる
+
+RUN curl -sSfL https://raw.githubusercontent.com/cosmtrek/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 
 ENV WORKDIR /go/src
 
