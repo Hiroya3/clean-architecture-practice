@@ -6,10 +6,12 @@ services:
     image: todo-app
     build:
       context: .
-      target: run-base #buildして利用するtarget
+      target: build-base #airを使うためscratchではなく敢えてこちらを指定
       dockerfile: ./docker/default/go/Dockerfile
     command:
       - air
+    volumes:
+      - ./:/go/src/
     ports:
       - "8080:8080" #http
       - "2345:2345" # dlv
