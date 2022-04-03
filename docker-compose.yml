@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  todo-app:
+    container_name: app
+    image: todo-app
+    build:
+      context: .
+      target: run-base
+      dockerfile: ./docker/default/go/Dockerfile
+    volumes:
+      - ./:/go/src
+    ports:
+      - "8080:8080" #http
