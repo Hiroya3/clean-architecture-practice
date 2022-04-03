@@ -1,13 +1,9 @@
 FROM golang:1.18 AS build-base
-#FROM golang:1.18
-# airとかdlv後で入れる
+# TODO airとかdlv後で入れる
 
 ENV WORKDIR /go/src
 
 WORKDIR ${WORKDIR}
-
-COPY go.mod .
-COPY go.sum .
 
 ADD . ${WORKDIR}
 

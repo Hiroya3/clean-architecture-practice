@@ -6,9 +6,7 @@ services:
     image: todo-app
     build:
       context: .
-      target: run-base
+      target: run-base #buildして利用するtarget
       dockerfile: ./docker/default/go/Dockerfile
-    volumes:
-      - ./:/go/src
     ports:
       - "8080:8080" #http
