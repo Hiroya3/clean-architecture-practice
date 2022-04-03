@@ -1,6 +1,6 @@
 package todo
 
-import "Hiroya3/clean-architecture-practice/app/domain/user"
+import "github.com/Hiroya3/clean-architecture-practice/app/domain/user"
 
 type Todo struct {
 	ID   ID

@@ -1,10 +1,10 @@
-module Hiroya3/clean-architecture-practice
+module github.com/Hiroya3/clean-architecture-practice
 
 go 1.17
 
 require (
 	github.com/99designs/gqlgen v0.17.2
-	github.com/vektah/gqlparser/v2 v2.4.0
+	github.com/vektah/gqlparser/v2 v2.4.1
 )
 
 require (

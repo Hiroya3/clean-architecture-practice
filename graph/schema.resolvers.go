@@ -4,10 +4,10 @@ package graph
 // will be copied through when generating and any unknown code will be moved to the end.
 
 import (
-	"Hiroya3/clean-architecture-practice/graph/generated"
-	"Hiroya3/clean-architecture-practice/graph/model"
 	"context"
 	"fmt"
+	"github.com/Hiroya3/clean-architecture-practice/graph/generated"
+	"github.com/Hiroya3/clean-architecture-practice/graph/model"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {

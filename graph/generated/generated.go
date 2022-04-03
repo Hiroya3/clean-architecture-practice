@@ -3,10 +3,10 @@
 package generated
 
 import (
-	"Hiroya3/clean-architecture-practice/graph/model"
 	"bytes"
 	"context"
 	"errors"
+	"github.com/Hiroya3/clean-architecture-practice/graph/model"
 	"strconv"
 	"sync"
 	"sync/atomic"

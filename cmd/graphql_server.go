@@ -1,8 +1,8 @@
 package main
 
 import (
-	"Hiroya3/clean-architecture-practice/graph"
-	"Hiroya3/clean-architecture-practice/graph/generated"
+	"github.com/Hiroya3/clean-architecture-practice/graph"
+	"github.com/Hiroya3/clean-architecture-practice/graph/generated"
 	"log"
 	"net/http"
 	"os"
