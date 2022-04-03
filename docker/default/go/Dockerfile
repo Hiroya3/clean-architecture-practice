@@ -16,4 +16,3 @@ COPY --from=build-base /bin/todo-app /bin/todo-app
 COPY --from=build-base /go/src/config /etc/config
 EXPOSE 8080
 ENTRYPOINT ["/bin/todo-app"]
-#これが実行されてairがされていないかも
