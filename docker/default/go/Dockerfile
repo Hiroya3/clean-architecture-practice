@@ -1,5 +1,6 @@
 FROM golang:1.18 AS build-base
 
+RUN go install github.com/go-delve/delve/cmd/dlv@v1.8.0
 RUN curl -sSfL https://raw.githubusercontent.com/cosmtrek/air/master/install.sh | sh -s -- -b $(go env GOPATH)/bin
 
 ENV WORKDIR /go/src
@@ -14,5 +15,6 @@ FROM scratch AS run-base
 
 COPY --from=build-base /bin/todo-app /bin/todo-app
 COPY --from=build-base /go/src/config /etc/config
+
 EXPOSE 8080
 ENTRYPOINT ["/bin/todo-app"]

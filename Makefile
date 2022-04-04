@@ -12,6 +12,6 @@ build:
 .PHONY: build-debug
 build-debug:
 	go mod download
-	type dlv || go install github.com/go-delve/delve/cmd/dlv@v1.7.0
+	type dlv || go install github.com/go-delve/delve/cmd/dlv@v1.8.0
 	mkdir -p tmp
 	go build -gcflags "all=-N -l" -o ./tmp/todo-app ./cmd

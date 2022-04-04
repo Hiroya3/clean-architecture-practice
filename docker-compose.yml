@@ -13,5 +13,5 @@ services:
     volumes:
       - ./:/go/src/
     ports:
-      - "8080:8080" #http
+      - "8080:8080" # http
       - "2345:2345" # dlv
