@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package todo;
+
+option go_package = "github.com/Hiroya3/clean-architecture-practice/grpc/gen";
+
+service TodoService{
+  rpc GetTodoV1(GetTodoV1RequestPayload)returns(GetTodoV1ResponsePayload){}
+}
+
+message GetTodoV1RequestPayload{
+  int64 id = 1;
+}
+
+message GetTodoV1ResponsePayload{
+  string todoName = 1;
+}
