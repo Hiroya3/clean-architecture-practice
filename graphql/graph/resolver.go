@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"github.com/Hiroya3/clean-architecture-practice/graph/model"
+	"github.com/Hiroya3/clean-architecture-practice/graphql/graph/model"
 )
 
 // This file will not be regenerated automatically.

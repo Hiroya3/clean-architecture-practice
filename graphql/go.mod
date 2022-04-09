@@ -1,4 +1,4 @@
-module github.com/Hiroya3/clean-architecture-practice
+module github.com/Hiroya3/clean-architecture-practice/graphql
 
 go 1.17
 

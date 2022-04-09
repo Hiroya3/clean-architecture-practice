@@ -6,8 +6,8 @@ package graph
 import (
 	"context"
 	"fmt"
-	"github.com/Hiroya3/clean-architecture-practice/graph/generated"
-	"github.com/Hiroya3/clean-architecture-practice/graph/model"
+	"github.com/Hiroya3/clean-architecture-practice/graphql/graph/generated"
+	"github.com/Hiroya3/clean-architecture-practice/graphql/graph/model"
 
 	"math/rand"
 )
