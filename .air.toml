@@ -7,11 +7,11 @@ tmp_dir = "tmp"
 
 [build]
 # Just plain old shell command. You could use `make` as well.
-cmd = "make build-debug && pkill ./tmp/todo-app || true"
+cmd = "make build-debug && pkill ./tmp/graphql-app || true"
 # Binary file yields from `cmd`.
-bin = "./tmp/todo-app"
+bin = "./tmp/graphql-app"
 # Customize binary.
-full_bin = "/go/bin/dlv exec ./tmp/todo-app --headless=true --listen=:2345 --api-version=2 --accept-multiclient --continue"
+full_bin = "/go/bin/dlv exec ./tmp/graphql-app --headless=true --listen=:2345 --api-version=2 --accept-multiclient --continue"
 # Watch these filename extensions.
 include_ext = ["go", "yaml", "env"]
 # Ignore these filename extensions or directories.

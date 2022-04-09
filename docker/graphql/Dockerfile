@@ -9,7 +9,7 @@ WORKDIR ${WORKDIR}
 
 ADD . ${WORKDIR}
 
-RUN GOOS=linux CGO_ENABLED=0 go build -o /bin/graphql-app ./cmd
+RUN make build
 
 FROM scratch AS run-base
 
