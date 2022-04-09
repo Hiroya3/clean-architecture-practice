@@ -6,10 +6,10 @@ package graph
 import (
 	"context"
 	"fmt"
+	"math/rand"
+
 	"github.com/Hiroya3/clean-architecture-practice/graphql/graph/generated"
 	"github.com/Hiroya3/clean-architecture-practice/graphql/graph/model"
-
-	"math/rand"
 )
 
 func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
