@@ -9,12 +9,12 @@ WORKDIR ${WORKDIR}
 
 ADD . ${WORKDIR}
 
-RUN GOOS=linux CGO_ENABLED=0 go build -o /bin/todo-app ./cmd
+RUN GOOS=linux CGO_ENABLED=0 go build -o /bin/graphql-app ./cmd
 
 FROM scratch AS run-base
 
-COPY --from=build-base /bin/todo-app /bin/todo-app
+COPY --from=build-base /bin/graphql-app /bin/graphql-app
 COPY --from=build-base /go/src/config /etc/config
 
 EXPOSE 8080
-ENTRYPOINT ["/bin/todo-app"]
+ENTRYPOINT ["/bin/graphql-app"]

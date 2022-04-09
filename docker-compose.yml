@@ -1,13 +1,13 @@
 version: "3.7"
 
 services:
-  todo-app:
-    container_name: app
-    image: todo-app
+  graphql-app:
+    container_name: graphql-app
+    image: graphql-app
     build:
       context: .
       target: build-base #airを使うためscratchではなく敢えてこちらを指定
-      dockerfile: ./docker/default/go/Dockerfile
+      dockerfile: docker/graphql/Dockerfile
     command:
       - air
     volumes:
