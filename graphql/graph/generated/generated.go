@@ -6,13 +6,13 @@ import (
 	"bytes"
 	"context"
 	"errors"
+	"github.com/Hiroya3/clean-architecture-practice/graph/model"
 	"strconv"
 	"sync"
 	"sync/atomic"
 
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/Hiroya3/clean-architecture-practice/graph/model"
 	gqlparser "github.com/vektah/gqlparser/v2"
 	"github.com/vektah/gqlparser/v2/ast"
 )

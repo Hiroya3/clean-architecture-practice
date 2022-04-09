@@ -7,7 +7,7 @@ services:
     build:
       context: .
       target: build-base #airを使うためscratchではなく敢えてこちらを指定
-      dockerfile: docker/graphql/Dockerfile
+      dockerfile: graphql/docker/graphql/Dockerfile
     command:
       - air
     volumes:
