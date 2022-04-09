@@ -1,12 +1,3 @@
-GOBASE=$(shell pwd)
-GOBIN=$(GOBASE)/bin
-
-init:
-	make build-debug
-
-build:
-	GOOS=linux CGO_ENABLED=0 go build -o $(GOBIN)/graphql-app ./graph/server
-
 .PHONY: build-debug
 build-debug:
 	go mod download

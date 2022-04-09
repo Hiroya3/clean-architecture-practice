@@ -9,7 +9,7 @@ WORKDIR ${WORKDIR}
 
 ADD . ${WORKDIR}
 
-RUN make build
+RUN GOOS=linux CGO_ENABLED=0 go build -o /bin/graphql-app ./graph/server
 
 FROM scratch AS run-base
 
